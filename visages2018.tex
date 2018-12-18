@@ -706,6 +706,8 @@ This work was done in collaboration with A. Stamm, A. Menafoglio and S.K. Warfie
 \end{participants}
 Arterial spin labeling is a magnetic resonance perfusion imaging technique that, while providing results comparable to methods currently considered as more standard concerning the quantification of the cerebral blood flow, is subject to limitations related to its low signal-to-noise ratio and low resolution. In this work, we investigated the relevance of using a non-local patch-based super-resolution method driven by a high-resolution structural image to increase the level of details in arterial spin labeling images. This method was evaluated by comparison with other image dimension increasing techniques on a simulated dataset, on images of healthy subjects and on images of subjects diagnosed with brain tumors, who had a dynamic susceptibility contrast acquisition. The influence of an increase of ASL images resolution on partial volume effects was also investigated in this work.~\cite{meuree:inserm-01880726}
 
+The development of this super-resolution algorithm in the context of a thesis financed by Siemens Healthineers conducted to a stay of one month of the PhD candidate in Erlangen, during summer 2018. This immersion into the neuro-development team allowed to integrate the proposed solution with tools in use within this team. Part of the work also consisted in reducing the calculation time, a factor of 5 being achieved at the end of these four weeks.
+
 \subsubsection{Resting-state ASL : Toward an optimal sequence duration}
 \begin{participants}
       \pers{Corentin}{Vallée}
@@ -802,11 +804,12 @@ This work was done in collaboration with Prof. Thomas Nichols from the Oxford Bi
 
 \subsection{Machine learning}
 
-\subsubsection{IPMI Claire *TODO*}
+\subsubsection{Learning sparse predictor from hybrid EEG-fMRI neurofeedback}
 \begin{participants}
       \pers{C.}{Cury}
 \end{participants}
-
+Electroencephalography (EEG) and functional magnetic resonance  imaging  (fMRI)  both  allow  measurement  of  brain  activity  for neuro-feedback (NF), respectively with high temporal resolution for EEG and  high  spatial  resolution  for  fMRI.  Using  simultaneously  fMRI  and EEG  for  NF  training  is  very  promising  to  devise  brain  rehabilitation protocols, however performing NF-fMRI is costly, exhausting and time consuming, and cannot be repeated too many times for the same subject. The original contribution of this paper concerns the prediction of NF scores from EEG recordings only, using a training phase where both EEG and fMRI NF are available. We propose a model able to predict NF scores from coupling EEG-fMRI (NF-EEG-fMRI) of 17 subjects in motor imagery task. The prediction of NF-EEG-fMRI scores is satisfactory
+and significantly overpass what EEG can provide alone, when adding to NF-EEG, the prediction of NF-fMRI from EEG signals. The prediction of NF-fMRI significantly adds information and increases the quality of the estimated NF-EEG-fMRI scores.
 
 \end{module}
 
