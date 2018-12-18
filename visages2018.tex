@@ -694,6 +694,8 @@ Acquisition sequences in diffusion MRI rely on the use time-dependent magnetic f
 \end{participants}
 The single diffusion tensor model for mapping the brain white matter microstructure has long been criticized as providing sensitive yet non-specific clinical biomarkers for neurodegenerative diseases because (i) voxels in diffusion images actually contain more than one homogeneous tissue population and (ii) diffusion in a single homogeneous tissue can be non-Gaussian. Analytic models for compartmental diffusion signals have thus naturally emerged but there is surprisingly little for processing such images (estimation, smoothing, registration, atlas-ing, statistical analysis). We propose to embed these signals into a Bayes Hilbert space that we properly define and motivate. This provides a unified framework for compartment diffusion image computing. Experiments show that (i) interpolation in Bayes space features improved robustness to noise compared to the widely used log-Euclidean space for tensors and (ii) it is possible to trace complex key pathways such as the pyramidal tract using basic deterministic tractography thanks to the combined use of Bayes interpolation and multi-compartment diffusion models~\cite{stamm:inserm-01937992}
 
+This work was done in collaboration with A. Stamm, A. Menafoglio and S.K. Warfield.
+
 \subsection{Arterial Spin Labeling}
 \subsubsection{Patch-Based Super-Resolution of Arterial Spin Labeling Magnetic Resonance Images}
 \begin{participants}
@@ -733,6 +735,7 @@ A multiple sclerosis (MS) lesion at an early stage undergoes active blood brain 
 \end{participants}
 Demyelination, axonal damage and inflammation are critical indicators of the onset and progress of neurodegenerative diseases such as multiple sclerosis (MS) in patients. Due to physical limitations of imaging such as acquisition time and imaging resolution, a voxel in a MR image is heterogeneous in terms of tissue microstructure such as myelin, axons, intra and extra cellular fluids and free water. We present a multi-compartment tissue model which estimates the water fraction (WF) of tissues with short, medium and high $T_2$ relaxation times in a $T_2$ relaxometry MRI voxel. The proposed method is validated on test-retest data of healthy controls. This model was then used to study longitudinal trends of the tissue microstructures for two sub-regions of the lesions: gadolinium enhanced (E+) and non-enhanced (L−) regions of MS lesions in 10 MS patients over a period of three years. The water fraction values in E+ and L− regions were found to be significantly different (p < 0.05) over the period of first three months. The results of this study also showed that the estimates of the proposed $T_2$ relaxometry model on brain tissue microstructures have potential to distinguish between regions undergoing active blood brain barrier breakdown from the other regions of the lesion~\cite{chatterjee:hal-01837974}.
 
+This work was done in collaboration with Onur Afacn and Simon K. Warfield.
 
 \subsubsection{Multi-Compartment Model of Brain Tissues from T2 Relaxometry MRI Using Gamma Distribution}
 \begin{participants}
@@ -742,7 +745,8 @@ Demyelination, axonal damage and inflammation are critical indicators of the ons
 \end{participants}
 The brain microstructure, especially myelinated axons and free fluids, may provide useful insight into brain neurodegenerative diseases such as multiple sclerosis (MS). These may be distinguished based on their transverse relaxation times which can be measured using $T_2$ relaxometry MRI. However, due to physical limitations on achievable resolution, each voxel contains a combination of these tissues, rendering the estimation complex. We presented a novel multi-compartment $T_2$ (MCT2) estimation based on variable projection, applicable to any MCT2 microstructure model. We derived this estimation for a three-gamma distribution model. We validated our framework on synthetic data and illustrated its potential on healthy volunteer and MS patient data~\cite{chatterjee:hal-01744852}.
 
-% TODO: Could also go in axis 2
+This work was done in collaboration with Onur Afacn and Simon K. Warfield.
+
 \subsubsection{A 3-year follow-up study of enhancing and non-enhancing multiple sclerosis (MS) lesions in MS patients demonstrating clinically isolated syndrome (CIS) using a multi-compartment $T_2$ relaxometry (MCT2) model}
 \begin{participants}
       \pers{S.}{Chatterjee}
@@ -753,6 +757,7 @@ The brain microstructure, especially myelinated axons and free fluids, may provi
 \end{participants}
 Obtaining information on condition of tissue microstructures (such as myelin, intra/extra cellular cells, free water) can provide important insights into MS lesion. However, MRI voxels are heterogeneous in terms of tissue microstructure due to the limited imaging resolution owing to existing physical limitations of MRI scanners. Here we evaluated a multi-compartment $T_2$ relaxometry model and then used it to study the evolution of enhancing (USPIO and gadolinium positive) and non-enhancing lesions in 6 MS patients with CIS characteristics over a period 3 years with 7 follow-up scans post baseline~\cite{chatterjee:hal-01821694}.
 
+This work was done in collaboration with Onur Afacn and Simon K. Warfield.
 
 \subsection{Atlases}
 \subsubsection{Anisotropic similarity, a constrained affine transformation: Application to brain development analysis}
@@ -763,6 +768,7 @@ Obtaining information on condition of tissue microstructures (such as myelin, in
 \end{participants}
 The study of brain development provides insights in the normal trend of brain evolution and enables early detection of abnormalities. We proposed a method to quantify brain growth in three arbitrary orthogonal directions of the brain through linear registration. We introduced a 9 degrees of freedom transformation that gives the opportunity to extract scaling factors describing brain growth along those directions by registering a database of subjects in a common basis. We applied this framework to create longitudinal curves of scaling ratios along fixed orthogonal directions from 0 to 16 years highlighting anisotropic brain development~\cite{legouhy:inserm-01871274}.
 
+This work was done in collaboration with François Rousseau.
 
 \subsection{Simultaneous EEG/fMRI}
 
@@ -771,23 +777,28 @@ The study of brain development provides insights in the normal trend of brain ev
       \pers{M.}{Fleury}
       \pers{C.}{Barillot}
       \pers{E.}{Bannier}
-      \pers{M.}{Mano}
       \pers{P.}{Maurel}      
 \end{participants}
 The coupling of Electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) enables the measure of brain activity at high spatial and temporal resolution. The localisation of EEG sources depends on several parameters including the knowledge of the position of the electrodes on the scalp. An accurate knowledge about this information is important for source reconstruction. Currently, when acquiring EEG and fMRI together, the position of the electrodes is generally estimated according to fiducial points by using a template. In the context of simultaneous EEG/fMRI acquisition, a natural idea is to use magnetic resonance (MR) images to localise EEG electrodes. However, most MR compatible electrodes are built to be almost invisible on MR Images. Taking advantage of a recently proposed Ultra short Echo Time (UTE) sequence, we introduce a fully automatic method to detect and label those electrodes in MR images. Our method was tested on 8 subjects wearing a 64-channel EEG cap. This automated method showed an average detection accuracy of 94\% and the average position error was 3.1 mm. These results suggest that the proposed method has potential for determining the position of the electrodes during simultaneous EEG/fMRI acquisition with a very light cost procedure"~\cite{fleury:hal-01939735, fleury:hal-01874815, mano:inserm-01577442}.
+
+This work was done in collaboration with Marsel Mano.
 
 \subsection{Inference in neuroimaging}
 \subsubsection{Validity of summary statistics-based mixed-effects group fMRI}
 \begin{participants}
       \pers{Camille}{Maumet}
 \end{participants}
-Statistical analysis of multi-subject functional Magnetic Resonance Imaging (fMRI) data is traditionally done using either: 1) a mixed-effects GLM (MFX GLM) where within-subject variance estimates are used and incorporated into per-subject weights or 2) a random-effects General linear model (GLM) (RFX GLM) where within-subject variance estimates are not used. Both approaches are implemented and available in major neuroimaging software packages including: SPM (MFX analysis; 2nd-Level statistics), FSL (FLAME; OLS) and AFNI (3dMEMA; 3dttest++). While MFX GLM provides the most efficient statistical estimate, its properties are only guaranteed in large samples, and it has been shown that RFX GLM is a valid alternative for one-sample group analyses in fMRI [1]. We recently showed that MFX GLM for image-based meta-analysis could lead to invalid results in small-samples. Here, we investigate whether this issue also affects group fMRI~\cite{maumet:inserm-01887911}.
+Statistical analysis of multi-subject functional Magnetic Resonance Imaging (fMRI) data is traditionally done using either: 1) a mixed-effects GLM (MFX GLM) where within-subject variance estimates are used and incorporated into per-subject weights or 2) a random-effects General linear model (GLM) (RFX GLM) where within-subject variance estimates are not used. Both approaches are implemented and available in major neuroimaging software packages including: SPM (MFX analysis; 2nd-Level statistics), FSL (FLAME; OLS) and AFNI (3dMEMA; 3dttest++). While MFX GLM provides the most efficient statistical estimate, its properties are only guaranteed in large samples, and it has been shown that RFX GLM is a valid alternative for one-sample group analyses in fMRI [1]. We recently showed that MFX GLM for image-based meta-analysis could lead to invalid results in small-samples. We investigated whether this issue also affects group fMRI~\cite{maumet:inserm-01887911}.
+
+This work was done in collaboration with Prof. Thomas Nichols from the Oxford Big Data Institute, UK.
 
 \subsubsection{Choosing a practical and valid Image-Based Meta-Analysis}
 \begin{participants}
       \pers{Camille}{Maumet}
 \end{participants}
-Meta-analysis provides a quantitative approach to summarise the rich functional Magnetic Resonance Imaging (fMRI) literature. When image data is available for each study, the optimal approach is to perform an Image-Based Meta-Analysis (IBMA) [1]. A number of IBMA approaches have been proposed including combination of standardised statistics (Z's), just effect estimates (E's) or both effect estimates and their standard errors (SE's). While using both E’s \& SE’s and estimating between-study variance should be optimal, the methods are not guaranteed to work for small number of studies. Also, often only standardised estimates are shared, reducing the possible meta-analytic approaches. Finally, because the BOLD signal is non-quantitative care has to be taken in order to insure that E's are expressed in the same units [2,3], especially when combining data from different software packages. Given the growing interest in data sharing in the neuroimaging community there is a need to identify what is the minimal data to be shared in order to allow for future IBMAs. Here, we investigate the validity of 8 IBMA approaches~\cite{maumet:inserm-01933032}.
+Meta-analysis provides a quantitative approach to summarise the rich functional Magnetic Resonance Imaging (fMRI) literature. When image data is available for each study, the optimal approach is to perform an Image-Based Meta-Analysis (IBMA) [1]. A number of IBMA approaches have been proposed including combination of standardised statistics (Z's), just effect estimates (E's) or both effect estimates and their standard errors (SE's). While using both E’s \& SE’s and estimating between-study variance should be optimal, the methods are not guaranteed to work for small number of studies. Also, often only standardised estimates are shared, reducing the possible meta-analytic approaches. Finally, because the BOLD signal is non-quantitative care has to be taken in order to insure that E's are expressed in the same units [2,3], especially when combining data from different software packages. Given the growing interest in data sharing in the neuroimaging community there is a need to identify what is the minimal data to be shared in order to allow for future IBMAs. We investigated the validity of 8 IBMA approaches~\cite{maumet:inserm-01933032}.
+
+This work was done in collaboration with Prof. Thomas Nichols from the Oxford Big Data Institute, UK.
 
 \subsection{Machine learning}
 
@@ -796,12 +807,6 @@ Meta-analysis provides a quantitative approach to summarise the rich functional 
       \pers{C.}{Cury}
 \end{participants}
 
-
-\subsubsection{Statistical Shape Analysis of Large Datasets Based on Diffeomorphic Iterative Centroids}
-\begin{participants}
-      \pers{C.}{Cury}
-\end{participants}
-In this paper, we propose an approach for template-based shape analysis of large datasets, using diffeomorphic centroids as atlas shapes. Diffeomorphic centroid methods fit in the Large Deformation Diffeomorphic Metric Mapping (LDDMM) framework and use kernel metrics on currents to quantify surface dissimilarities. The statistical analysis is based on a Kernel Principal Component Analysis (Kernel PCA) performed on the set of initial momentum vectors which parametrize the deformations. We tested the approach on different datasets of hippocampal shapes extracted from brain magnetic resonance imaging (MRI), compared three different centroid methods and a variational template estimation. The largest dataset is composed of 1,000 surfaces, and we are able to analyse this dataset in 26 h using a diffeomorphic centroid. Our experiments demonstrate that computing diffeomorphic centroids in place of standard variational templates leads to similar shape analysis results and saves around 70\% of computation time. Furthermore, the approach is able to adequately capture the variability of hippocampal shapes with a reasonable number of dimensions, and to predict anatomical features of the hippocampus, only present in 17\% of the population, in healthy subjects.~\cite{cury:hal-01920263}.
 
 \end{module}
 
@@ -824,50 +829,38 @@ Neurofeedback  (NF)  consists  on  training  self-regulation  of  brain  activit
 \subsection{Refining understanding of working memory buffers through the construct of binding: Evidence from a single case informs theory and clinical practise}
 \begin{participants}
       \pers{Pierre-Yves}{Jonin}
-      \pers{Clara}{Calia}, 
-      \pers{Sophie}{Muratot},
-      \pers{Serge}{Belliard},
       \pers{Quentin}{Duché},
-      \pers{Emmanuel}{Barbeau},
-      \pers{Mario.}{Parra},
 \end{participants}
-Binding operations carried out in working memory enable the integration of information from different sources during online performance. While available evidence suggests that working memory may involve distinct binding functions, whether or not they all involve the episodic buffer as a cognitive substrate remains unclear. Similarly, knowledge about the neural underpinnings of working memory buffers is limited, more specifically regarding the involvement of medial temporal lobe structures. In the present study, we report on the case of patient KA, with developmental amnesia and selective damage to the whole hippocampal system. We found that KA was unable to hold shape-colours associations (relational binding) in working memory. In contrast, he could hold integrated coloured shapes (conjunctive binding) in two different tasks. Otherwise, and as expected, KA was impaired on three relational memory tasks thought to depend on the hippocampus that are widely used in the early detection of Alzheimer's disease. Our results emphasize a dissociation between two binding processes within working memory, suggesting that the visuo-spatial sketchpad could support conjunctive binding, and may rely upon a large cortical network including sub-hippocampal structures. By contrast, we found evidence for a selective impairment of relational binding in working memory when the hippocampal system is compromised, suggesting that the long-term memory deficit observed in amnesic patients may be related to impaired short-term relational binding at encoding. Finally, these findings may inform research on the early detection of Alzheimer's disease as the preservation of conjunctive binding in KA is in sharp contrast with the impaired performance demonstrated very early in this disease.
-.~\cite{jonin:inserm-01916090}.
+Binding operations carried out in working memory enable the integration of information from different sources during online performance. While available evidence suggests that working memory may involve distinct binding functions, whether or not they all involve the episodic buffer as a cognitive substrate remains unclear. Similarly, knowledge about the neural underpinnings of working memory buffers is limited, more specifically regarding the involvement of medial temporal lobe structures. In the present study, we report on the case of patient KA, with developmental amnesia and selective damage to the whole hippocampal system. We found that KA was unable to hold shape-colours associations (relational binding) in working memory. In contrast, he could hold integrated coloured shapes (conjunctive binding) in two different tasks. Otherwise, and as expected, KA was impaired on three relational memory tasks thought to depend on the hippocampus that are widely used in the early detection of Alzheimer's disease. Our results emphasized a dissociation between two binding processes within working memory, suggesting that the visuo-spatial sketchpad could support conjunctive binding, and may rely upon a large cortical network including sub-hippocampal structures. By contrast, we found evidence for a selective impairment of relational binding in working memory when the hippocampal system is compromised, suggesting that the long-term memory deficit observed in amnesic patients may be related to impaired short-term relational binding at encoding. Finally, these findings may inform research on the early detection of Alzheimer's disease as the preservation of conjunctive binding in KA is in sharp contrast with the impaired performance demonstrated very early in this disease~\cite{jonin:inserm-01916090}.
 
 \subsection{Superior explicit memory despite severe developmental amnesia: In-depth case study and neural correlates}
 \begin{participants}
       \pers{Pierre-Yves}{Jonin}
-      \pers{Gabriel}{Besson}, 
-      \pers{Renaud}{La Joie},
-      \pers{Jérémie}{Pariente},
-      \pers{Serge}{Belliard},
       \pers{Christian}{Barillot},
-      \pers{Emmanuel}{Barbeau},
 \end{participants}
-The acquisition of new semantic memories is sometimes preserved in patients with hippocampal amnesia. Robust evidence for this comes from case reports of developmental amnesia suggesting that low-to-normal levels of semantic knowledge can be achieved despite compromised epi-sodic learning. However, it is unclear whether this relative preservation of semantic memory results from normal acquisition and retrieval or from residual episodic memory, combined with effortful repetition. Furthermore, lesion studies have mainly focused on the hippocampus itself, and have seldom reported the state of structures in the extended hippocampal system. Preserved components of this system may therefore mediate residual episodic abilities, contributing to the apparent semantic preservation. We report an in-depth study of Patient KA, a 27-year-old man who had severe hypoxia at birth, in which we carefully explored his residual episodic learning abilities. We used novel speeded recognition paradigms to assess whether KA could explicitly acquire and retrieve new context-free memories. Despite a pattern of very severe amnesia, with a 44-point discrepancy between his intelligence and memory quotients, KA exhibited normal-to-superior levels of knowledge, even under strict time constraints. He also exhibited normal-to-superior recognition memory for new material, again under strict time constraints. Mul-timodal neuroimaging revealed an unusual pattern of selective atrophy within each component of the extended hippocampal system, contrasting with the preservation of anterior subhippocampal cortices. A cortical thickness analysis yielded a pattern of thinner but also thicker regional cortices, pointing toward specific temporal lobe reorganization following early injury. We thus report the first case of superior explicit learning and memory in a severe case of amnesia, raising important questions about how such knowledge can be acquired~\cite{jonin:inserm-01916086}.
+The acquisition of new semantic memories is sometimes preserved in patients with hippocampal amnesia. Robust evidence for this comes from case reports of developmental amnesia suggesting that low-to-normal levels of semantic knowledge can be achieved despite compromised epi-sodic learning. However, it is unclear whether this relative preservation of semantic memory results from normal acquisition and retrieval or from residual episodic memory, combined with effortful repetition. Furthermore, lesion studies have mainly focused on the hippocampus itself, and have seldom reported the state of structures in the extended hippocampal system. Preserved components of this system may therefore mediate residual episodic abilities, contributing to the apparent semantic preservation. We recently reported an in-depth study of Patient KA, a 27-year-old man who had severe hypoxia at birth, in which we carefully explored his residual episodic learning abilities. We used novel speeded recognition paradigms to assess whether KA could explicitly acquire and retrieve new context-free memories. Despite a pattern of very severe amnesia, with a 44-point discrepancy between his intelligence and memory quotients, KA exhibited normal-to-superior levels of knowledge, even under strict time constraints. He also exhibited normal-to-superior recognition memory for new material, again under strict time constraints. Multimodal neuroimaging revealed an unusual pattern of selective atrophy within each component of the extended hippocampal system, contrasting with the preservation of anterior subhippocampal cortices. A cortical thickness analysis yielded a pattern of thinner but also thicker regional cortices, pointing toward specific temporal lobe reorganization following early injury. We thus report the first case of superior explicit learning and memory in a severe case of amnesia, raising important questions about how such knowledge can be acquired~\cite{jonin:inserm-01916086}.
 
+This work was done in collaboration with Gabriel Besson, Renaud La Joie, Jérémie Pariente, Serge Belliard and Emmanuel Barbeau.
 
 \subsection{Retrieval practice based on recognition memory: testing the retrieval effort hypothesis}
 \begin{participants}
       \pers{Pierre-Yves}{Jonin}
-      \pers{Audrey}{Noël}, 
-      \pers{Gabriel}{Besson},
-      \pers{Sophie}{Muratot},
-      \pers{Serge}{Belliard},
-      \pers{Christian}{Barillot},
-      \pers{Emmanuel}{Barbeau},
+      \pers{Christian}{Barillot}
 \end{participants}
 We tested a core prediction of the retrieval effort hypothesis as an account for the testing effect (TE). Retrieval effort predicts that automatic, effortful retrieval should not lead to TE. Experiment 1 (N=76) showed that despite an encoding duration of three times less, object pictures retention is better after repeated testing under Old/New recognition conditions, than following repeated study. Experiment 2 (N=30) used a speeded and accuracy boosting procedure to rule out the contribution of recollection to retrieval. Retention of object pictures at 25 minutes and 6 months was similar after repeated testing or after repeated studying. These results call for a revision of the retrieval effort hypothesis as a mechanistic account of TE~\cite{jonin:inserm-01939069}.
+
+This work was done in collaboration with Audrey Noel, Gabriel Besson, Sophie Muratot, Serge Belliard and Emmanuel Barbeau.
 
 
 \subsection{Voxel-wise Comparison with a-contrario Analysis for Automated Segmentation of Multiple Sclerosis Lesions from Multimodal MRI}
 \begin{participants}
       \pers{Francesca}{Galassi}
       \pers{Olivier}{Commowick},
-      \pers{Emmanuel}{Vallee},
       \pers{Christian}{Barillot},
 \end{participants}
-We introduce a new framework for the automated and un-supervised segmentation of Multiple Sclerosis lesions from multimodal Magnetic Resonance images. It relies on a voxel-wise approach to detect local white matter abnormalities, with an a-contrario analysis, which takes into account local information. First, a voxel-wise comparison of multimodal patient images to a set of controls is performed. Then, region-based probabilities are estimated using an a-contrario approach. Finally, correction for multiple testing is performed. Validation was undertaken on a multi-site clinical dataset of 53 MS patients with various number and volume of lesions. We showed that the proposed framework outperforms the widely used FDR-correction for this type of analysis, particularly for low lesion loads~\cite{galassi:inserm-01888928}.
+We introduced a new framework for the automated and un-supervised segmentation of Multiple Sclerosis lesions from multimodal Magnetic Resonance images. It relies on a voxel-wise approach to detect local white matter abnormalities, with an a-contrario analysis, which takes into account local information. First, a voxel-wise comparison of multimodal patient images to a set of controls is performed. Then, region-based probabilities are estimated using an a-contrario approach. Finally, correction for multiple testing is performed. Validation was undertaken on a multi-site clinical dataset of 53 MS patients with various number and volume of lesions. We showed that the proposed framework outperforms the widely used FDR-correction for this type of analysis, particularly for low lesion loads~\cite{galassi:inserm-01888928}.
+
+This work was done in collaboration with Emmanuel Vallée. 
 
 \subsection{Integration of Probabilistic Atlas and Graph Cuts for Automated Segmentation of Multiple Sclerosis lesions}
 \begin{participants}
@@ -875,7 +868,7 @@ We introduce a new framework for the automated and un-supervised segmentation of
       \pers{Olivier}{Commowick},
       \pers{Christian}{Barillot},
 \end{participants}
-We propose a framework for automated segmentation of Multiple Sclerosis (MS) lesions
+We proposed a framework for automated segmentation of Multiple Sclerosis (MS) lesions
 from MR brain images. It integrates a priori tissues and MS lesions information into a Graph-Cuts algorithm for improved segmentation results.~\cite{galassi:hal-01823801}.
 
 \subsection{Multiple sclerosis}
@@ -895,77 +888,15 @@ from MR brain images. It integrates a priori tissues and MS lesions information 
 \end{participants}
 The VisAGeS research team has a strong focus on applying the developed methodologies (illustrated in research axis 1) to multiple sclerosis (MS) understanding and the prediction of its evolution. Related to the EMISEP project on spinal cord injury evolution in MS, a first work investigated the magnetization transfer reproducibility across centers in the spinal cord and was accepted for publication~\cite{combes:hal-01934605}. Based on this work, a second work investigated the sensitivity of magnetization transfer to assess diffuse and focal burden in MS patients and was published in Multiple Sclerosis~\cite{combes:hal-01934621}.
 
-
-\subsubsection{Spinal Cord toolbox}
-\begin{participants}
-      \pers{Charley}{Gros}
-      \pers{Benjamin}{De Leener}
-      \pers{Atef}{Badji}
-      \pers{Josefina}{Maranzano}
-      \pers{Dominique}{Eden}
-      \pers{Sara}{Dupont}
-      \pers{Jason}{Talbott}
-      \pers{Ren}{Zhuoquiong}
-      \pers{Yaou}{Li}
-      \pers{Tobias}{Granberg}
-      \pers{Russell}{Ouellette}
-      \pers{Yasuhiko}{Tachibana}	
-      \pers{Masaaka}{Hori}
-      \pers{Kouhei}{Kamiya}
-      \pers{Lydia}{Chougar}
-      \pers{Leszek}{Stawiarz}
-      \pers{Jan}{Hillert}
-      \pers{Elise}{Bannier}
-      \pers{Anne}{Kerbrat}
-      \pers{Gilles}{Edan}
-      \pers{Pierre}{Labauge}
-      \pers{Virginie}{Callot}
-      \pers{Jean}{Pelletier}
-      \pers{Bertrand}{Audoin}
-      \pers{Henitsoa}{Rasoanandrianina}
-      \pers{Jean-Christophe}{Brisset}
-      \pers{Paola}{Valsasina}
-      \pers{Maria A.}{Rocca}
-      \pers{Massimo}{Filippi}
-      \pers{Rohit}{Bakshi}
-      \pers{Shahamat}{Tauhid}
-      \pers{Ferran}{Prados}
-      \pers{Marios}{Yiannakas}
-      \pers{Hugh}{Kearney}
-      \pers{Olga}{Ciccarelli}
-      \pers{Seth}{Smith}
-      \pers{Constantina Andrada}{Treaba}
-      \pers{Caterina}{Mainero}
-      \pers{Jennifer}{Lefeuvre}
-      \pers{Daniel S.}{Reich}
-      \pers{Govind}{Nair}
-      \pers{Vincent}{Auclair}
-      \pers{Donald G.}{McLaren}
-      \pers{Allan R.}{Martin}
-      \pers{Michael G.}{Fehlings}
-      \pers{Shahabeddin}{Vahdat}
-      \pers{Ali}{Khatibi}
-      \pers{Julien}{Doyon}
-      \pers{Timothy}{Shepherd}
-      \pers{Erik}{Charlson}
-      \pers{Sridar}{Narayanan} 
-      \pers{Julien}{Cohen-Adad}
-      \end{participants}
-
-The spinal cord is frequently affected by atrophy and/or lesions in multiple sclerosis (MS) patients. Segmentation of the spinal cord and lesions from MRI data provides measures of damage, which are key criteria for the diagnosis, prognosis, and longitudinal monitoring in MS. Automating this operation eliminates inter-rater variability and increases the efficiency of large-throughput analysis pipelines. Robust and reliable segmentation across multi-site spinal cord data is challenging because of the large variability related to acquisition parameters and image artifacts. In particular, a precise delineation of lesions is hindered by a broad heterogeneity of lesion contrast, size, location, and shape. The goal of this study was to develop a fully-automatic framework — robust to variability in both image parameters and clinical condition — for segmentation of the spinal cord and intramedullary MS lesions from conventional MRI data of MS and non-MS cases. Scans of 1042 subjects (459 healthy controls, 471 MS patients, and 112 with other spinal pathologies) were included in this multi-site study (n = 30). Data spanned three contrasts (T1-, T2-, and T2∗-weighted) for a total of 1943 vol and featured large heterogeneity in terms of resolution, orientation, coverage, and clinical conditions. The proposed cord and lesion automatic segmentation approach is based on a sequence of two Convolutional Neural Networks (CNNs). The proposed framework is open-source and readily available in the Spinal Cord Toolbox.
-
 \subsection{Epilepsy}
 \begin{participants}
       \pers{Élise}{Bannier}
-      \pers{Giulio}{Gambarota}
-     \pers{Jean-Christophe}{Ferré}
-      \pers{Tobias}{Kober}
-      \pers{Anca}{Nica}
-      \pers{Stephan}{Chabardes}
-      \pers{Claire}{Haegelen}
+      \pers{Jean-Christophe}{Ferré}
 \end{participants}
 
 Accurate localization of the thalamic subregions is of paramount importance for Deep Brain Stimulation (DBS) planning. Current MRI protocols use T2 and Gadolinium-enhanced T1 images, to visualize both the basal ganglia and the vessels, in order to define the electrode trajectory and target. A study showing the usefulness of Fluid and White Matter Suppression, i.e. FLAWS imaging, in eleven drug-resistant epileptic patients for preoperative Deep Brain Stimulation planning and anterior thalamic nucleus targeting was presented as a Power Pitch at the ISMRM Meeeting in Paris ~\cite{bannier:inserm-01939451}.
+
+This work was done in collaboration with Giulio Gambarota, Tobias Kober, Anca Nica, Stephan Chabardes and Claire Haegelen.
 
 \subsection{Arterial Spin Labeling in pediatric populations}
 \begin{participants}
@@ -983,7 +914,7 @@ evaluate its potential in different contexts. As part of the PhD of Maia Proisy,
 MR perfusion images using arterial spin labeling in neonates and children for several purposes:
 \begin{itemize}
     \item Investigation of brain perfusion evolution between 6 month and 15 years using ASL sequence in order to provide reference values in this age range~\cite{carsinvu:inserm-01708945},
-    \item Evaluation of the evolution of the cerebral blood flow changes betwwen day-of-life 3 and day-of-life 10 in a population of neonates with hypoxic-ischemic encephalopathy\cite{proisy:inserm-01944507}, ["Changes in brain perfusion in successive arterial spin labelling MRI scans in neonates with hypoxic-ischaemic encephalopathy", article in revision in Neuroimage: Clinical].
+    \item Evaluation of the evolution of the cerebral blood flow changes betwren day-of-life 3 and day-of-life 10 in a population of neonates with hypoxic-ischemic encephalopathy\cite{proisy:inserm-01944507}, [\textit{"Changes in brain perfusion in successive arterial spin labelling MRI scans in neonates with hypoxic-ischaemic encephalopathy"}, article in revision in Neuroimage: Clinical].
 \end{itemize}
 
 \subsection{Diffusion MRI in depression}
@@ -993,10 +924,11 @@ MR perfusion images using arterial spin labeling in neonates and children for se
       \pers{Jean-Marie}{Batail}
       \pers{Isabelle}{Corouge}
       \pers{Jean-Christophe}{Ferre}
-      \pers{Dominique}{Drapier}
       \pers{Christian}{Barillot}
 \end{participants}
-Despite the extensive therapy options available for depression, up to 80\% of patients will suffer from a relapse. Consequently, understanding the neural correlates underlying the depression will optimize the diagnosis and treatment of individual depressed patients. The purpose of our study was to investigate alterations of white matter integrity in a large cohort of patients suffering from depression using diffusion tensor imaging. Our findings provide robust evidence that the reduction of white-matter integrity in the interhemispheric connections and fronto-limbic neuronal circuits may play an important role in depression pathogenesis.~\cite{coloigner:hal-01812093}
+Despite the extensive therapy options available for depression, up to 80\% of patients will suffer from a relapse. Consequently, understanding the neural correlates underlying the depression will optimize the diagnosis and treatment of individual depressed patients. In an experimental study, we investigated alterations of white matter integrity in a large cohort of patients suffering from depression using diffusion tensor imaging. Our findings provide robust evidence that the reduction of white-matter integrity in the interhemispheric connections and fronto-limbic neuronal circuits may play an important role in depression pathogenesis.~\cite{coloigner:hal-01812093}. 
+
+This work was done in collaboration with Dominique Drapier.
 
 \subsubsection{Diffusion MRI as a descriptive imaging marker of the pathogenesis of treatment-resistant depression}
 \begin{participants}
@@ -1004,21 +936,13 @@ Despite the extensive therapy options available for depression, up to 80\% of pa
       \pers{Jean-Marie}{Batail}
       \pers{Isabelle}{Corouge}
       \pers{Jean-Christophe}{Ferre}
-      \pers{Dominique}{Drapier}
       \pers{Christian}{Barillot}
 \end{participants}
-Despite the extensive therapy options available for depression, treatment-resistant depression (TRD) occurs in 20-30\% of depressed patients. Consequently, identification of neural changes in TRD could support to better understand the mechanism of resistance and to improve the treatment of individual depressed patients. We aimed to investigate the white-matter microstructure in a sample of depressed patients in which response to treatment was subsequently evaluated 6 months after. Our findings suggest the abnormalities of the white-matter integrity in multiple white matter tracts, such as anterior limb of internal capsule and genu of corpus may play a role in the pathogenesis of treatment-resistant depression.~\cite{coloigner:hal-01812087}
+Despite the extensive therapy options available for depression, treatment-resistant depression (TRD) occurs in 20-30\% of depressed patients. Consequently, identification of neural changes in TRD could support to better understand the mechanism of resistance and to improve the treatment of individual depressed patients. We aimed to investigate the white-matter microstructure in a sample of depressed patients in which response to treatment was subsequently evaluated 6 months after. Our findings suggest the abnormalities of the white-matter integrity in multiple white matter tracts, such as anterior limb of internal capsule and genu of corpus may play a role in the pathogenesis of treatment-resistant depression~\cite{coloigner:hal-01812087}.
 
-\subsubsection{White matter connectivity analysis in patients suffering from depression.
-}
-\begin{participants}
-      \pers{Julie}{Coloigner}
-      \pers{Jean-Marie}{Batail}
-      \pers{Isabelle}{Corouge}
-      \pers{Dominique}{Drapier}
-      \pers{Christian}{Barillot}
-\end{participants}
-Depressive disorder is characterized by a profound dysregulation of affect and mood as well as additional abnormalities including cognitive dysfunction, insomnia, fatigue and appetite disturbance. This disease is the most prevalent mental illness, with an estimated lifetime prevalence reported to range from 10\% to 15\% worldwide. Despite the extensive therapy options available for depression, up to 80\% of patients will suffer from a relapse. Consequently, understanding the neural correlates underlying the depression is critical for improving the specificity and efficacy of diagnostic and treatment strategies.Previous studies of structural and functional magnetic resonance imaging have reported several microstructural abnormalities in the prefrontal cortex, anterior cingulate cortex, hippocampus and thalamus. These observations suggest a dysfunction of the circuits connecting frontal and subcortical brain regions, leading to a "disconnection syndrome". Using graph theory-based analysis, we examined white matter changes in the organization of networks in patients suffering from depression. Our diffusion imaging data showed white matter alteration in patients suffering from depression is occurring in the anterior thalamic radiation and in the cingulate bundle. Our findings suggest decreased fiber density in circuits connecting subcortical brain regions with the frontal and parietal cortex, supporting the theory of limbic-frontal circuit dysfunction.~\cite{coloigner:hal-01890087}
+Depressive disorder is characterized by a profound dysregulation of affect and mood as well as additional abnormalities including cognitive dysfunction, insomnia, fatigue and appetite disturbance. This disease is the most prevalent mental illness, with an estimated lifetime prevalence reported to range from 10\% to 15\% worldwide. Despite the extensive therapy options available for depression, up to 80\% of patients will suffer from a relapse. Consequently, understanding the neural correlates underlying the depression is critical for improving the specificity and efficacy of diagnostic and treatment strategies.Previous studies of structural and functional magnetic resonance imaging have reported several microstructural abnormalities in the prefrontal cortex, anterior cingulate cortex, hippocampus and thalamus. These observations suggest a dysfunction of the circuits connecting frontal and subcortical brain regions, leading to a "disconnection syndrome". Using graph theory-based analysis, we examined white matter changes in the organization of networks in patients suffering from depression. Our diffusion imaging data showed white matter alteration in patients suffering from depression is occurring in the anterior thalamic radiation and in the cingulate bundle. Our findings suggest decreased fiber density in circuits connecting subcortical brain regions with the frontal and parietal cortex, supporting the theory of limbic-frontal circuit dysfunction~\cite{coloigner:hal-01890087}. 
+
+This work was done in collaboration with Dominique Drapier.
 
 \end{module}
 
