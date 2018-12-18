@@ -235,7 +235,7 @@
 \pers{Anne}{Kerbrat}{PhD}[Centre hospitalier régional et universitaire de Rennes, until Oct 2018]
 \pers{Antoine}{Legouhy}{PhD}[CNRS]
 \pers{Stephanie}{Leplaideur}{PhD}[Centre hospitalier régional et universitaire de Rennes]
-\pers{Cédric}{Meurée}{PhD}[*TODO*\_\_\_EMPLOYEUR???\_\_\_]
+\pers{Cédric}{Meurée}{PhD}[Siemens CIFRE]
 \pers{Maia}{Proisy}{PhD}[Centre hospitalier régional et universitaire de Rennes, until Oct 2018]
 \pers{Xavier}{Rolland}{PhD}[CNRS, from Oct 2018]
 \pers{Haykel}{Snoussi}{PhD}[Inria]
@@ -599,8 +599,9 @@ The major objective within this application domain is to build anatomical and fu
 
 \begin{module}{highlights}{NewHighlights}{}
 
-\subsection{New reseracher}
+\subsection{New permanent team members}
 Julie Coloigner was recruited as CNRS Researcher, starting from October 2018.
+Michael Kain was recruited as Research Engineer, starting from December 2018.
 
 \subsection{New MRI at the Neurinfo platform}
 A new 3T Siemens Prisma was installed at the Neuroinfo platform in February 2018. An official ceremony was organised with all the funders in November 2018.
@@ -685,14 +686,11 @@ Extraction and exploitation of complex imaging biomarkers involve an imaging pro
       \pers{Raphaël}{Truffet}
       \pers{Emmanuel}{Caruyer}
 \end{participants}
-Acquisition sequences in diffusion MRI rely on the use time-dependent magnetic field gradients. Each gradient waveform encodes a diffusion weighted measure; a large number of such measurements are necessary for the in vivo reconstruction of microstructure parameters. We propose here a method to select only a subset of the measurements while being able to predict the unseen data using compressed sensing. We learn a dictionary using a training dataset generated with Monte-Carlo simulations; we then compare two different heuristics to select the measures to use for the prediction. We found that an undersampling strategy limiting the redundancy of the measures allows for a more accurate reconstruction when compared with random undersampling with similar sampling rate~\cite{truffet:inserm-01939066}.
+Acquisition sequences in diffusion MRI rely on the use time-dependent magnetic field gradients. Each gradient waveform encodes a diffusion weighted measure; a large number of such measurements are necessary for the in vivo reconstruction of microstructure parameters. We proposed here a method to select only a subset of the measurements while being able to predict the unseen data using compressed sensing. We learnt a dictionary using a training dataset generated with Monte-Carlo simulations; we then compare two different heuristics to select the measures to use for the prediction. We found that an undersampling strategy limiting the redundancy of the measures allows for a more accurate reconstruction when compared with random undersampling with similar sampling rate~\cite{truffet:inserm-01939066}.
 
 \subsubsection{A Bayes Hilbert Space for Compartment Model Computing in Diffusion MRI}
 \begin{participants}
-      \pers{A.}{Stamm}
       \pers{O.}{Commowick}
-      \pers{A.}{Menafoglio}
-      \pers{S. K.}{Warfield}
 \end{participants}
 The single diffusion tensor model for mapping the brain white matter microstructure has long been criticized as providing sensitive yet non-specific clinical biomarkers for neurodegenerative diseases because (i) voxels in diffusion images actually contain more than one homogeneous tissue population and (ii) diffusion in a single homogeneous tissue can be non-Gaussian. Analytic models for compartmental diffusion signals have thus naturally emerged but there is surprisingly little for processing such images (estimation, smoothing, registration, atlas-ing, statistical analysis). We propose to embed these signals into a Bayes Hilbert space that we properly define and motivate. This provides a unified framework for compartment diffusion image computing. Experiments show that (i) interpolation in Bayes space features improved robustness to noise compared to the widely used log-Euclidean space for tensors and (ii) it is possible to trace complex key pathways such as the pyramidal tract using basic deterministic tractography thanks to the combined use of Bayes interpolation and multi-compartment diffusion models~\cite{stamm:inserm-01937992}
 
@@ -704,7 +702,7 @@ The single diffusion tensor model for mapping the brain white matter microstruct
       \pers{Jean-Christophe}{Ferré},
       \pers{Christian}{Barillot}.
 \end{participants}
-Arterial spin labeling is a magnetic resonance perfusion imaging technique that, while providing results comparable to methods currently considered as more standard concerning the quantification of the cerebral blood flow, is subject to limitations related to its low signal-to-noise ratio and low resolution. In this work, we investigate the relevance of using a non-local patch-based super-resolution method driven by a high-resolution structural image to increase the level of details in arterial spin labeling images. This method is evaluated by comparison with other image dimension increasing techniques on a simulated dataset, on images of healthy subjects and on images of subjects diagnosed with brain tumors, who had a dynamic susceptibility contrast acquisition. The influence of an increase of ASL images resolution on partial volume effects is also investigated in this work.~\cite{meuree:inserm-01880726}
+Arterial spin labeling is a magnetic resonance perfusion imaging technique that, while providing results comparable to methods currently considered as more standard concerning the quantification of the cerebral blood flow, is subject to limitations related to its low signal-to-noise ratio and low resolution. In this work, we investigated the relevance of using a non-local patch-based super-resolution method driven by a high-resolution structural image to increase the level of details in arterial spin labeling images. This method was evaluated by comparison with other image dimension increasing techniques on a simulated dataset, on images of healthy subjects and on images of subjects diagnosed with brain tumors, who had a dynamic susceptibility contrast acquisition. The influence of an increase of ASL images resolution on partial volume effects was also investigated in this work.~\cite{meuree:inserm-01880726}
 
 \subsubsection{Resting-state ASL : Toward an optimal sequence duration}
 \begin{participants}
@@ -713,7 +711,7 @@ Arterial spin labeling is a magnetic resonance perfusion imaging technique that,
       \pers{Isabelle}{Corouge},
       \pers{Christian}{Barillot},
 \end{participants}
-Resting-state functional Arterial Spin Labeling (rs-fASL) in clinical daily practice and academic research stay discreet compared to resting-state BOLD. However, by giving direct access to cerebral blood flow maps, rs-fASL leads to significant clinical subject scaled application as CBF can be considered as a biomarker in common neuropathology. Our work here focuses on the link between overall quality of rs-fASL and duration of acquisition. To this end, we consider subject self-Default Mode Network (DMN), and assess DMN quality depletion compared to a gold standard DMN depending on the duration of acquisition~\cite{vallee:inserm-01935089}.
+Resting-state functional Arterial Spin Labeling (rs-fASL) in clinical daily practice and academic research stay discreet compared to resting-state BOLD. However, by giving direct access to cerebral blood flow maps, rs-fASL leads to significant clinical subject scaled application as CBF can be considered as a biomarker in common neuropathology. Our work here focused on the link between overall quality of rs-fASL and duration of acquisition. To this end, we consider subject self-Default Mode Network (DMN), and assess DMN quality depletion compared to a gold standard DMN depending on the duration of acquisition~\cite{vallee:inserm-01935089}.
 
 
 \subsection{Quantitative imaging}
@@ -722,69 +720,51 @@ Resting-state functional Arterial Spin Labeling (rs-fASL) in clinical daily prac
 \begin{participants}
       \pers{S.}{Chatterjee}
       \pers{O.}{Commowick}, 
-      \pers{O.}{Afacan},
-      \pers{S. K.}{Warfield},
       \pers{C.}{Barillot},
 \end{participants}
-A multiple sclerosis (MS) lesion at an early stage undergoes active blood brain barrier (BBB) breakdown. Identifying MS lesions in a patient which are undergoing active BBB breakdown is of critical importance for MS burden evaluation and treatment planning. However in non-contrast enhanced structural magnetic resonance imaging (MRI) the regions of the lesion undergoing active BBB breakdown cannot be distinguished from the other parts of the lesion. Hence gadolinium (Gd) contrast enhanced T1-weighted MR images are used for this task. However some side effects of Gd injection into patients have been increasingly reported recently. The BBB breakdown is reflected by the condition of tissue microstructure such as increased inflammation, presence of higher extra-cellular matter and debris. We thus propose a framework to predict enhancing regions in MS lesions using tissue microstructure information derived from T2 relaxometry and diffusion MRI (dMRI) multicompartment models. We show that combination of the dMRI and T2 relaxometry microstructure information can distinguish the Gd enhancing lesion regions from the other regions in MS lesions~\cite{chatterjee:hal-01830532}.
+A multiple sclerosis (MS) lesion at an early stage undergoes active blood brain barrier (BBB) breakdown. Identifying MS lesions in a patient which are undergoing active BBB breakdown is of critical importance for MS burden evaluation and treatment planning. However in non-contrast enhanced structural magnetic resonance imaging (MRI) the regions of the lesion undergoing active BBB breakdown cannot be distinguished from the other parts of the lesion. Hence gadolinium (Gd) contrast enhanced T1-weighted MR images are used for this task. However some side effects of Gd injection into patients have been increasingly reported recently. The BBB breakdown is reflected by the condition of tissue microstructure such as increased inflammation, presence of higher extra-cellular matter and debris. We have thus proposed a framework to predict enhancing regions in MS lesions using tissue microstructure information derived from T2 relaxometry and diffusion MRI (dMRI) multicompartment models. We showed that combination of the dMRI and T2 relaxometry microstructure information can distinguish the Gd enhancing lesion regions from the other regions in MS lesions~\cite{chatterjee:hal-01830532}.
+
+\subsubsection{A three year follow-up study of gadolinium enhanced and non-enhanced regions in multiple sclerosis lesions using a multi-compartment $T_2$ relaxometry model}
+\begin{participants}
+      \pers{S.}{Chatterjee}
+      \pers{O.}{Commowick}, 
+      \pers{B.}{Combes},
+      \pers{C.}{Barillot},
+\end{participants}
+Demyelination, axonal damage and inflammation are critical indicators of the onset and progress of neurodegenerative diseases such as multiple sclerosis (MS) in patients. Due to physical limitations of imaging such as acquisition time and imaging resolution, a voxel in a MR image is heterogeneous in terms of tissue microstructure such as myelin, axons, intra and extra cellular fluids and free water. We present a multi-compartment tissue model which estimates the water fraction (WF) of tissues with short, medium and high $T_2$ relaxation times in a $T_2$ relaxometry MRI voxel. The proposed method is validated on test-retest data of healthy controls. This model was then used to study longitudinal trends of the tissue microstructures for two sub-regions of the lesions: gadolinium enhanced (E+) and non-enhanced (L−) regions of MS lesions in 10 MS patients over a period of three years. The water fraction values in E+ and L− regions were found to be significantly different (p < 0.05) over the period of first three months. The results of this study also showed that the estimates of the proposed $T_2$ relaxometry model on brain tissue microstructures have potential to distinguish between regions undergoing active blood brain barrier breakdown from the other regions of the lesion~\cite{chatterjee:hal-01837974}.
 
 
 \subsubsection{Multi-Compartment Model of Brain Tissues from T2 Relaxometry MRI Using Gamma Distribution}
 \begin{participants}
       \pers{S.}{Chatterjee}
       \pers{O.}{Commowick}, 
-      \pers{O.}{Afacan},
-      \pers{S. K.}{Warfield},
       \pers{C.}{Barillot},
 \end{participants}
-The brain microstructure, especially myelinated axons and free fluids, may provide useful insight into brain neurodegenerative diseases such as multiple sclerosis (MS). These may be distinguished based on their transverse relaxation times which can be measured using $T_2$ relaxometry MRI. However, due to physical limitations on achievable resolution, each voxel contains a combination of these tissues, rendering the estimation complex. We present a novel multi-compartment $T_2$ (MCT2) estimation based on variable projection, applicable to any MCT2 microstructure model. We derive this estimation for a three-gamma distribution model. We validate our framework on synthetic data and illustrate its potential on healthy volunteer and MS patient data~\cite{chatterjee:hal-01744852}.
+The brain microstructure, especially myelinated axons and free fluids, may provide useful insight into brain neurodegenerative diseases such as multiple sclerosis (MS). These may be distinguished based on their transverse relaxation times which can be measured using $T_2$ relaxometry MRI. However, due to physical limitations on achievable resolution, each voxel contains a combination of these tissues, rendering the estimation complex. We presented a novel multi-compartment $T_2$ (MCT2) estimation based on variable projection, applicable to any MCT2 microstructure model. We derived this estimation for a three-gamma distribution model. We validated our framework on synthetic data and illustrated its potential on healthy volunteer and MS patient data~\cite{chatterjee:hal-01744852}.
 
 % TODO: Could also go in axis 2
 \subsubsection{A 3-year follow-up study of enhancing and non-enhancing multiple sclerosis (MS) lesions in MS patients demonstrating clinically isolated syndrome (CIS) using a multi-compartment $T_2$ relaxometry (MCT2) model}
 \begin{participants}
       \pers{S.}{Chatterjee}
       \pers{O.}{Commowick}, 
-      \pers{O.}{Afacan},
       \pers{B.}{Combes},
       \pers{A.}{Kerbrat},
-      \pers{S. K.}{Warfield},
       \pers{C.}{Barillot},
 \end{participants}
 Obtaining information on condition of tissue microstructures (such as myelin, intra/extra cellular cells, free water) can provide important insights into MS lesion. However, MRI voxels are heterogeneous in terms of tissue microstructure due to the limited imaging resolution owing to existing physical limitations of MRI scanners. Here we evaluated a multi-compartment $T_2$ relaxometry model and then used it to study the evolution of enhancing (USPIO and gadolinium positive) and non-enhancing lesions in 6 MS patients with CIS characteristics over a period 3 years with 7 follow-up scans post baseline~\cite{chatterjee:hal-01821694}.
 
-% TODO: Could also go in axis 2
-\subsubsection{A three year follow-up study of gadolinium enhanced and non-enhanced regions in multiple sclerosis lesions using a multi-compartment $T_2$ relaxometry model}
-\begin{participants}
-      \pers{S.}{Chatterjee}
-      \pers{O.}{Commowick}, 
-      \pers{O.}{Afacan},
-      \pers{B.}{Combes},
-      \pers{S. K.}{Warfield},
-      \pers{C.}{Barillot},
-\end{participants}
-Demyelination, axonal damage and inflammation are critical indicators of the onset and progress of neurodegenerative diseases such as multiple sclerosis (MS) in patients. Due to physical limitations of imaging such as acquisition time and imaging resolution, a voxel in a MR image is heterogeneous in terms of tissue microstructure such as myelin, axons, intra and extra cellular fluids and free water. We present a multi-compartment tissue model which estimates the water fraction (WF) of tissues with short, medium and high $T_2$ relaxation times in a $T_2$ relaxometry MRI voxel. The proposed method is validated on test-retest data of healthy controls. This model was then used to study longitudinal trends of the tissue microstructures for two sub-regions of the lesions: gadolinium enhanced (E+) and non-enhanced (L−) regions of MS lesions in 10 MS patients over a period of three years. The water fraction values in E+ and L− regions were found to be significantly different (p < 0.05) over the period of first three months. The results of this study also showed that the estimates of the proposed $T_2$ relaxometry model on brain tissue microstructures have potential to distinguish between regions undergoing active blood brain barrier breakdown from the other regions of the lesion~\cite{chatterjee:hal-01837974}.
 
 \subsection{Atlases}
 \subsubsection{Anisotropic similarity, a constrained affine transformation: Application to brain development analysis}
 \begin{participants}
       \pers{A.}{Legouhy}
       \pers{O.}{Commowick}
-      \pers{F.}{Rousseau}
       \pers{C.}{Barillot}
 \end{participants}
-The study of brain development provides insights in the normal trend of brain evolution and enables early detection of abnormalities. We propose a method to quantify brain growth in three arbitrary orthogonal directions of the brain through linear registration. We introduce a 9 degrees of freedom transformation that gives the opportunity to extract scaling factors describing brain growth along those directions by registering a database of subjects in a common basis. We apply this framework to create longitudinal curves of scaling ratios along fixed orthogonal directions from 0 to 16 years highlighting anisotropic brain development~\cite{legouhy:inserm-01871274}.
+The study of brain development provides insights in the normal trend of brain evolution and enables early detection of abnormalities. We proposed a method to quantify brain growth in three arbitrary orthogonal directions of the brain through linear registration. We introduced a 9 degrees of freedom transformation that gives the opportunity to extract scaling factors describing brain growth along those directions by registering a database of subjects in a common basis. We applied this framework to create longitudinal curves of scaling ratios along fixed orthogonal directions from 0 to 16 years highlighting anisotropic brain development~\cite{legouhy:inserm-01871274}.
 
 
 \subsection{Simultaneous EEG/fMRI}
-\subsubsection{Automatic Electrodes Detection during simultaneous EEG/fMRI acquisition}
-\begin{participants}
-      \pers{M.}{Fleury}
-      \pers{P.}{Maurel}
-      \pers{M.}{Mano}
-      \pers{E.}{Bannier}
-      \pers{C.}{Barillot}
-\end{participants}
-Simultaneous EEG/fMRI acquisition allows to measure brain activity at high spatial-temporal resolution. The localisation ofEEG sources depends on several parameters including the position of the electrodes on the scalp. The position of the MRelectrodes during its acquisitions is obtained with the use of the UTE sequence allowing their visualisation. The retrieval ofthe electrodes consists in obtaining the volume where the electrodes are located by applying a sphere detectionalgorithm. We detect around 90\% of electrodes for each subject, and our UTE-based electrode detection showed anaverage position error of 3.7mm for all subjects~\cite{fleury:hal-01874815}.
 
 \subsubsection{Automated Electrodes Detection during simultaneous EEG/fMRI}
 \begin{participants}
@@ -794,34 +774,32 @@ Simultaneous EEG/fMRI acquisition allows to measure brain activity at high spati
       \pers{M.}{Mano}
       \pers{P.}{Maurel}      
 \end{participants}
-The coupling of Electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) enables the measure of brain activity at high spatial and temporal resolution. The localisation of EEG sources depends on several parameters including the knowledge of the position of the electrodes on the scalp. An accurate knowledge about this information is important for source reconstruction. Currently, when acquiring EEG and fMRI together, the position of the electrodes is generally estimated according to fiducial points by using a template. In the context of simultaneous EEG/fMRI acquisition, a natural idea is to use magnetic resonance (MR) images to localise EEG electrodes. However, most MR compatible electrodes are built to be almost invisible on MR Images. Taking advantage of a recently proposed Ultra short Echo Time (UTE) sequence, we introduce a fully automatic method to detect and label those electrodes in MR images. Our method was tested on 8 subjects wearing a 64-channel EEG cap. This automated method showed an average detection accuracy of 94\% and the average position error was 3.1 mm. These results suggest that the proposed method has potential for determining the position of the electrodes during simultaneous EEG/fMRI acquisition with a very light cost procedure." BioRxiv waiting for Frontiers in ICA~\cite{fleury:hal-01939735}.
+The coupling of Electroencephalography (EEG) and functional magnetic resonance imaging (fMRI) enables the measure of brain activity at high spatial and temporal resolution. The localisation of EEG sources depends on several parameters including the knowledge of the position of the electrodes on the scalp. An accurate knowledge about this information is important for source reconstruction. Currently, when acquiring EEG and fMRI together, the position of the electrodes is generally estimated according to fiducial points by using a template. In the context of simultaneous EEG/fMRI acquisition, a natural idea is to use magnetic resonance (MR) images to localise EEG electrodes. However, most MR compatible electrodes are built to be almost invisible on MR Images. Taking advantage of a recently proposed Ultra short Echo Time (UTE) sequence, we introduce a fully automatic method to detect and label those electrodes in MR images. Our method was tested on 8 subjects wearing a 64-channel EEG cap. This automated method showed an average detection accuracy of 94\% and the average position error was 3.1 mm. These results suggest that the proposed method has potential for determining the position of the electrodes during simultaneous EEG/fMRI acquisition with a very light cost procedure"~\cite{fleury:hal-01939735, fleury:hal-01874815, mano:inserm-01577442}.
 
 \subsection{Inference in neuroimaging}
 \subsubsection{Validity of summary statistics-based mixed-effects group fMRI}
 \begin{participants}
       \pers{Camille}{Maumet}
-      \pers{Thomas}{Nichols}
 \end{participants}
 Statistical analysis of multi-subject functional Magnetic Resonance Imaging (fMRI) data is traditionally done using either: 1) a mixed-effects GLM (MFX GLM) where within-subject variance estimates are used and incorporated into per-subject weights or 2) a random-effects General linear model (GLM) (RFX GLM) where within-subject variance estimates are not used. Both approaches are implemented and available in major neuroimaging software packages including: SPM (MFX analysis; 2nd-Level statistics), FSL (FLAME; OLS) and AFNI (3dMEMA; 3dttest++). While MFX GLM provides the most efficient statistical estimate, its properties are only guaranteed in large samples, and it has been shown that RFX GLM is a valid alternative for one-sample group analyses in fMRI [1]. We recently showed that MFX GLM for image-based meta-analysis could lead to invalid results in small-samples. Here, we investigate whether this issue also affects group fMRI~\cite{maumet:inserm-01887911}.
 
 \subsubsection{Choosing a practical and valid Image-Based Meta-Analysis}
 \begin{participants}
       \pers{Camille}{Maumet}
-      \pers{Thomas}{Nichols}
 \end{participants}
 Meta-analysis provides a quantitative approach to summarise the rich functional Magnetic Resonance Imaging (fMRI) literature. When image data is available for each study, the optimal approach is to perform an Image-Based Meta-Analysis (IBMA) [1]. A number of IBMA approaches have been proposed including combination of standardised statistics (Z's), just effect estimates (E's) or both effect estimates and their standard errors (SE's). While using both E’s \& SE’s and estimating between-study variance should be optimal, the methods are not guaranteed to work for small number of studies. Also, often only standardised estimates are shared, reducing the possible meta-analytic approaches. Finally, because the BOLD signal is non-quantitative care has to be taken in order to insure that E's are expressed in the same units [2,3], especially when combining data from different software packages. Given the growing interest in data sharing in the neuroimaging community there is a need to identify what is the minimal data to be shared in order to allow for future IBMAs. Here, we investigate the validity of 8 IBMA approaches~\cite{maumet:inserm-01933032}.
 
-\subsection{Shape analyses}
+\subsection{Machine learning}
+
+\subsubsection{IPMI Claire *TODO*}
+\begin{participants}
+      \pers{C.}{Cury}
+\end{participants}
+
+
 \subsubsection{Statistical Shape Analysis of Large Datasets Based on Diffeomorphic Iterative Centroids}
 \begin{participants}
       \pers{C.}{Cury}
-      \pers{J.}{Glaunès}, 
-      \pers{R.}{Toro},
-      \pers{M.}{Chupin},
-      \pers{G.}{Schumann},
-      \pers{V.}{Frouin},
-      \pers{J.-B.}{Poline},
-      \pers{O.}{Colliot},
 \end{participants}
 In this paper, we propose an approach for template-based shape analysis of large datasets, using diffeomorphic centroids as atlas shapes. Diffeomorphic centroid methods fit in the Large Deformation Diffeomorphic Metric Mapping (LDDMM) framework and use kernel metrics on currents to quantify surface dissimilarities. The statistical analysis is based on a Kernel Principal Component Analysis (Kernel PCA) performed on the set of initial momentum vectors which parametrize the deformations. We tested the approach on different datasets of hippocampal shapes extracted from brain magnetic resonance imaging (MRI), compared three different centroid methods and a variational template estimation. The largest dataset is composed of 1,000 surfaces, and we are able to analyse this dataset in 26 h using a diffeomorphic centroid. Our experiments demonstrate that computing diffeomorphic centroids in place of standard variational templates leads to similar shape analysis results and saves around 70\% of computation time. Furthermore, the approach is able to adequately capture the variability of hippocampal shapes with a reasonable number of dimensions, and to predict anatomical features of the hippocampus, only present in 17\% of the population, in healthy subjects.~\cite{cury:hal-01920263}.
 
@@ -1742,6 +1720,7 @@ transfer data processing. Preliminary results were presented at the ESMRMB and E
 %%% au lieu de : Participation in Other International Programs
 \begin{itemize}
     \item Collaboration with Neuropoly, Polytechnique Montreal: Haykel Snoussi visited the group of Julien Cohen-Adad and received an Inria-MITACS fellowship for a 3 months period (Nov. 2017-Jan. 2018). He worked on the processing of diffusion-weighted images of multiple sclerosis patients' spinal cord in the context of the EMISEP project.
+    \item Camille Maumet collaborates with Prof. Thomas Nichols and his group, NISOx at the Oxford Big Data Institute on neuroimaging data sharing.
 \end{itemize}
 
 \subsection{Participation in Other International Programs}
